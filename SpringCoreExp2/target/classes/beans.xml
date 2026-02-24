@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+
+	xmlns:aop="http://www.springframework.org/schema/aop"
+
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.0.xsd">
+	
+<!-- 	constructor injection -->
+	<bean id = "adr1" class="com.test.Address">
+		<constructor-arg name="city" value="Tirupathi"></constructor-arg>
+		<constructor-arg name="state" value="AP"></constructor-arg>
+		<constructor-arg name="country" value="INDIA"></constructor-arg>
+	</bean>
+		
+	<bean id="cst1" class="com.test.Customer">
+		<constructor-arg name="id" value="105"></constructor-arg>
+		<constructor-arg name="name" value="Ritesh"></constructor-arg>
+		<constructor-arg name="adr" ref="adr1"></constructor-arg>
+	</bean>
+	
+<!-- 	setter injection -->
+	<bean id="adr" class="com.test.Address">
+		<property name="city" value="Bangalore"></property>
+		<property name="state" value="KA"></property>
+		<property name="country" value="INDIA"></property>
+	</bean>
+	
+	<bean id="cst" class="com.test.Customer">
+		<property name="id" value="111"></property>
+		<property name="name" value="Niteesh"></property>
+		<property name="adr" ref="adr"></property>
+	</bean>
+	
+</beans>
+
+
