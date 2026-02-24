@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+
+	xmlns:aop="http://www.springframework.org/schema/aop"
+
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.0.xsd">
+	
+	<bean id="bd1" class="com.test.BookDetails">
+		<property name="pages" value="650"></property>
+		<property name="publisher" value="RamaMatt"></property>
+		<property name="pyear" value="2023"></property>
+	</bean>
+	<bean id="bd2" class="com.test.BookDetails">
+		<property name="pages" value="570"></property>
+		<property name="publisher" value="KrishnaBat"></property>
+		<property name="pyear" value="2024"></property>
+	</bean>
+	<bean id="bk" class= "com.test.Book" scope="singleton" autowire="default">
+		<property name ="id" value="101"></property>
+		<property name="name" value="Advance Java"></property>
+		<property name="author" value="Niteesh Mustafa"></property>
+		<property name="price" value="500"></property>
+<!-- 		<property name="bd" ref="bdobj"></property> -->
+		<property name="listbd">
+			<list>
+				<ref bean="bd1" />
+				<ref bean="bd2" />
+			</list>
+		</property>
+	</bean> 
+</beans>
+
+
