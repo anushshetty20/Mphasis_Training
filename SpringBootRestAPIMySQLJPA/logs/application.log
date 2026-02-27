@@ -1,0 +1,689 @@
+2026-02-27T14:46:31.410+05:30  INFO 44712 --- [SpringBootRestAPIMySQLJPA] [restartedMain] c.t.SpringBootRestApiMySqljpaApplication : Starting SpringBootRestApiMySqljpaApplication using Java 25.0.1 with PID 44712 (C:\Users\anush.x\Desktop\MLA_Anush\SpringBootRestAPIMySQLJPA\target\classes started by anush.x in C:\Users\anush.x\Desktop\MLA_Anush\SpringBootRestAPIMySQLJPA)
+2026-02-27T14:46:31.414+05:30  INFO 44712 --- [SpringBootRestAPIMySQLJPA] [restartedMain] c.t.SpringBootRestApiMySqljpaApplication : No active profile set, falling back to 1 default profile: "default"
+2026-02-27T14:46:31.514+05:30  INFO 44712 --- [SpringBootRestAPIMySQLJPA] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-02-27T14:46:31.515+05:30  INFO 44712 --- [SpringBootRestAPIMySQLJPA] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-02-27T14:46:32.687+05:30  INFO 44712 --- [SpringBootRestAPIMySQLJPA] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-27T14:46:32.712+05:30  INFO 44712 --- [SpringBootRestAPIMySQLJPA] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14 ms. Found 0 JPA repository interfaces.
+2026-02-27T14:46:33.299+05:30  INFO 44712 --- [SpringBootRestAPIMySQLJPA] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 7766 (http)
+2026-02-27T14:46:33.312+05:30  INFO 44712 --- [SpringBootRestAPIMySQLJPA] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-27T14:46:33.312+05:30  INFO 44712 --- [SpringBootRestAPIMySQLJPA] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-02-27T14:46:33.389+05:30  INFO 44712 --- [SpringBootRestAPIMySQLJPA] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1873 ms
+2026-02-27T14:46:33.653+05:30  INFO 44712 --- [SpringBootRestAPIMySQLJPA] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-02-27T14:46:33.721+05:30  INFO 44712 --- [SpringBootRestAPIMySQLJPA] [restartedMain] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.4.Final
+2026-02-27T14:46:34.328+05:30  INFO 44712 --- [SpringBootRestAPIMySQLJPA] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-27T14:46:34.368+05:30  INFO 44712 --- [SpringBootRestAPIMySQLJPA] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-02-27T14:46:34.853+05:30  INFO 44712 --- [SpringBootRestAPIMySQLJPA] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@165d2eab
+2026-02-27T14:46:34.855+05:30  INFO 44712 --- [SpringBootRestAPIMySQLJPA] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-02-27T14:46:34.950+05:30  WARN 44712 --- [SpringBootRestAPIMySQLJPA] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-27T14:46:34.977+05:30  INFO 44712 --- [SpringBootRestAPIMySQLJPA] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/mlafeb]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.42
+	Default catalog/schema: mlafeb/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-02-27T14:46:35.442+05:30  INFO 44712 --- [SpringBootRestAPIMySQLJPA] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-27T14:46:35.453+05:30  INFO 44712 --- [SpringBootRestAPIMySQLJPA] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-27T14:46:35.603+05:30  WARN 44712 --- [SpringBootRestAPIMySQLJPA] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-27T14:46:36.262+05:30  INFO 44712 --- [SpringBootRestAPIMySQLJPA] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 13 endpoints beneath base path '/actuator'
+2026-02-27T14:46:36.374+05:30  INFO 44712 --- [SpringBootRestAPIMySQLJPA] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 7766 (http) with context path '/'
+2026-02-27T14:46:36.386+05:30  INFO 44712 --- [SpringBootRestAPIMySQLJPA] [restartedMain] c.t.SpringBootRestApiMySqljpaApplication : Started SpringBootRestApiMySqljpaApplication in 5.612 seconds (process running for 6.934)
+2026-02-27T14:46:36.393+05:30  WARN 44712 --- [SpringBootRestAPIMySQLJPA] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-02-27T14:46:36.393+05:30  WARN 44712 --- [SpringBootRestAPIMySQLJPA] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-02-27T14:46:36.935+05:30  INFO 44712 --- [SpringBootRestAPIMySQLJPA] [RMI TCP Connection(4)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-27T14:46:36.935+05:30  INFO 44712 --- [SpringBootRestAPIMySQLJPA] [RMI TCP Connection(4)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-02-27T14:46:36.937+05:30  INFO 44712 --- [SpringBootRestAPIMySQLJPA] [RMI TCP Connection(4)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-02-27T14:50:31.714+05:30  INFO 44712 --- [SpringBootRestAPIMySQLJPA] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2026-02-27T14:50:31.719+05:30  INFO 44712 --- [SpringBootRestAPIMySQLJPA] [Thread-1] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-02-27T14:50:31.724+05:30  INFO 44712 --- [SpringBootRestAPIMySQLJPA] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-02-27T14:50:31.731+05:30  INFO 44712 --- [SpringBootRestAPIMySQLJPA] [Thread-1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-27T14:50:31.736+05:30  INFO 44712 --- [SpringBootRestAPIMySQLJPA] [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-02-27T14:50:31.744+05:30  INFO 44712 --- [SpringBootRestAPIMySQLJPA] [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-02-27T14:50:31.862+05:30  INFO 44712 --- [SpringBootRestAPIMySQLJPA] [restartedMain] c.t.SpringBootRestApiMySqljpaApplication : Starting SpringBootRestApiMySqljpaApplication using Java 25.0.1 with PID 44712 (C:\Users\anush.x\Desktop\MLA_Anush\SpringBootRestAPIMySQLJPA\target\classes started by anush.x in C:\Users\anush.x\Desktop\MLA_Anush\SpringBootRestAPIMySQLJPA)
+2026-02-27T14:50:31.865+05:30  INFO 44712 --- [SpringBootRestAPIMySQLJPA] [restartedMain] c.t.SpringBootRestApiMySqljpaApplication : No active profile set, falling back to 1 default profile: "default"
+2026-02-27T14:50:32.205+05:30  INFO 44712 --- [SpringBootRestAPIMySQLJPA] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-27T14:50:32.210+05:30  INFO 44712 --- [SpringBootRestAPIMySQLJPA] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 0 JPA repository interfaces.
+2026-02-27T14:50:32.402+05:30  INFO 44712 --- [SpringBootRestAPIMySQLJPA] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 7766 (http)
+2026-02-27T14:50:32.404+05:30  INFO 44712 --- [SpringBootRestAPIMySQLJPA] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-27T14:50:32.405+05:30  INFO 44712 --- [SpringBootRestAPIMySQLJPA] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-02-27T14:50:32.447+05:30  INFO 44712 --- [SpringBootRestAPIMySQLJPA] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 576 ms
+2026-02-27T14:50:32.515+05:30  INFO 44712 --- [SpringBootRestAPIMySQLJPA] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-02-27T14:50:32.555+05:30  INFO 44712 --- [SpringBootRestAPIMySQLJPA] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-27T14:50:32.557+05:30  INFO 44712 --- [SpringBootRestAPIMySQLJPA] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2026-02-27T14:50:32.590+05:30  INFO 44712 --- [SpringBootRestAPIMySQLJPA] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@207765de
+2026-02-27T14:50:32.591+05:30  INFO 44712 --- [SpringBootRestAPIMySQLJPA] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2026-02-27T14:50:32.593+05:30  WARN 44712 --- [SpringBootRestAPIMySQLJPA] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-27T14:50:32.595+05:30  INFO 44712 --- [SpringBootRestAPIMySQLJPA] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/mlafeb]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.42
+	Default catalog/schema: mlafeb/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-02-27T14:50:32.620+05:30  INFO 44712 --- [SpringBootRestAPIMySQLJPA] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-27T14:50:32.621+05:30  INFO 44712 --- [SpringBootRestAPIMySQLJPA] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-27T14:50:32.676+05:30  WARN 44712 --- [SpringBootRestAPIMySQLJPA] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-27T14:50:32.950+05:30  INFO 44712 --- [SpringBootRestAPIMySQLJPA] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 13 endpoints beneath base path '/actuator'
+2026-02-27T14:50:32.983+05:30  INFO 44712 --- [SpringBootRestAPIMySQLJPA] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 7766 (http) with context path '/'
+2026-02-27T14:50:32.987+05:30  INFO 44712 --- [SpringBootRestAPIMySQLJPA] [restartedMain] c.t.SpringBootRestApiMySqljpaApplication : Started SpringBootRestApiMySqljpaApplication in 1.166 seconds (process running for 243.533)
+2026-02-27T14:50:32.989+05:30  WARN 44712 --- [SpringBootRestAPIMySQLJPA] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-02-27T14:50:32.989+05:30  WARN 44712 --- [SpringBootRestAPIMySQLJPA] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-02-27T14:50:32.992+05:30  INFO 44712 --- [SpringBootRestAPIMySQLJPA] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-02-27T14:50:44.473+05:30  INFO 44712 --- [SpringBootRestAPIMySQLJPA] [RMI TCP Connection(8)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2026-02-27T14:50:44.474+05:30  INFO 44712 --- [SpringBootRestAPIMySQLJPA] [RMI TCP Connection(8)-127.0.0.1] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-02-27T14:50:44.478+05:30  INFO 44712 --- [SpringBootRestAPIMySQLJPA] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-02-27T14:50:44.481+05:30  INFO 44712 --- [SpringBootRestAPIMySQLJPA] [RMI TCP Connection(8)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-27T14:50:44.483+05:30  INFO 44712 --- [SpringBootRestAPIMySQLJPA] [RMI TCP Connection(8)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2026-02-27T14:50:44.491+05:30  INFO 44712 --- [SpringBootRestAPIMySQLJPA] [RMI TCP Connection(8)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2026-02-27T14:50:51.597+05:30  INFO 44316 --- [SpringBootRestAPIMySQLJPA] [restartedMain] c.t.SpringBootRestApiMySqljpaApplication : Starting SpringBootRestApiMySqljpaApplication using Java 25.0.1 with PID 44316 (C:\Users\anush.x\Desktop\MLA_Anush\SpringBootRestAPIMySQLJPA\target\classes started by anush.x in C:\Users\anush.x\Desktop\MLA_Anush\SpringBootRestAPIMySQLJPA)
+2026-02-27T14:50:51.601+05:30  INFO 44316 --- [SpringBootRestAPIMySQLJPA] [restartedMain] c.t.SpringBootRestApiMySqljpaApplication : No active profile set, falling back to 1 default profile: "default"
+2026-02-27T14:50:51.655+05:30  INFO 44316 --- [SpringBootRestAPIMySQLJPA] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-02-27T14:50:51.655+05:30  INFO 44316 --- [SpringBootRestAPIMySQLJPA] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-02-27T14:50:52.811+05:30  INFO 44316 --- [SpringBootRestAPIMySQLJPA] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-27T14:50:52.839+05:30  INFO 44316 --- [SpringBootRestAPIMySQLJPA] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15 ms. Found 0 JPA repository interfaces.
+2026-02-27T14:50:53.447+05:30  INFO 44316 --- [SpringBootRestAPIMySQLJPA] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 7766 (http)
+2026-02-27T14:50:53.464+05:30  INFO 44316 --- [SpringBootRestAPIMySQLJPA] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-27T14:50:53.465+05:30  INFO 44316 --- [SpringBootRestAPIMySQLJPA] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-02-27T14:50:53.540+05:30  INFO 44316 --- [SpringBootRestAPIMySQLJPA] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1884 ms
+2026-02-27T14:50:53.826+05:30  INFO 44316 --- [SpringBootRestAPIMySQLJPA] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-02-27T14:50:53.888+05:30  INFO 44316 --- [SpringBootRestAPIMySQLJPA] [restartedMain] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.4.Final
+2026-02-27T14:50:54.440+05:30  INFO 44316 --- [SpringBootRestAPIMySQLJPA] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-27T14:50:54.478+05:30  INFO 44316 --- [SpringBootRestAPIMySQLJPA] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-02-27T14:50:54.868+05:30  INFO 44316 --- [SpringBootRestAPIMySQLJPA] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3ca30b4
+2026-02-27T14:50:54.870+05:30  INFO 44316 --- [SpringBootRestAPIMySQLJPA] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-02-27T14:50:54.972+05:30  WARN 44316 --- [SpringBootRestAPIMySQLJPA] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-27T14:50:55.009+05:30  INFO 44316 --- [SpringBootRestAPIMySQLJPA] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/mlafeb]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.42
+	Default catalog/schema: mlafeb/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-02-27T14:50:55.416+05:30  INFO 44316 --- [SpringBootRestAPIMySQLJPA] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-27T14:50:55.425+05:30  INFO 44316 --- [SpringBootRestAPIMySQLJPA] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-27T14:50:55.564+05:30  WARN 44316 --- [SpringBootRestAPIMySQLJPA] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-27T14:50:56.180+05:30  INFO 44316 --- [SpringBootRestAPIMySQLJPA] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 13 endpoints beneath base path '/actuator'
+2026-02-27T14:50:56.299+05:30  INFO 44316 --- [SpringBootRestAPIMySQLJPA] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 7766 (http) with context path '/'
+2026-02-27T14:50:56.311+05:30  INFO 44316 --- [SpringBootRestAPIMySQLJPA] [restartedMain] c.t.SpringBootRestApiMySqljpaApplication : Started SpringBootRestApiMySqljpaApplication in 5.16 seconds (process running for 6.177)
+2026-02-27T14:50:56.319+05:30  WARN 44316 --- [SpringBootRestAPIMySQLJPA] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-02-27T14:50:56.319+05:30  WARN 44316 --- [SpringBootRestAPIMySQLJPA] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-02-27T14:50:57.053+05:30  INFO 44316 --- [SpringBootRestAPIMySQLJPA] [RMI TCP Connection(4)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-27T14:50:57.053+05:30  INFO 44316 --- [SpringBootRestAPIMySQLJPA] [RMI TCP Connection(4)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-02-27T14:50:57.055+05:30  INFO 44316 --- [SpringBootRestAPIMySQLJPA] [RMI TCP Connection(4)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-02-27T14:51:49.463+05:30  INFO 44316 --- [SpringBootRestAPIMySQLJPA] [http-nio-7766-exec-1] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 212 ms
+2026-02-27T14:52:02.480+05:30  INFO 44316 --- [SpringBootRestAPIMySQLJPA] [RMI TCP Connection(5)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2026-02-27T14:52:02.484+05:30  INFO 44316 --- [SpringBootRestAPIMySQLJPA] [RMI TCP Connection(5)-127.0.0.1] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-02-27T14:52:02.490+05:30  INFO 44316 --- [SpringBootRestAPIMySQLJPA] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-02-27T14:52:02.497+05:30  INFO 44316 --- [SpringBootRestAPIMySQLJPA] [RMI TCP Connection(5)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-27T14:52:02.502+05:30  INFO 44316 --- [SpringBootRestAPIMySQLJPA] [RMI TCP Connection(5)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-02-27T14:52:02.509+05:30  INFO 44316 --- [SpringBootRestAPIMySQLJPA] [RMI TCP Connection(5)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-02-27T15:45:29.020+05:30  INFO 43812 --- [SpringBootRestAPIMySQLJPA] [restartedMain] c.t.SpringBootRestApiMySqljpaApplication : Starting SpringBootRestApiMySqljpaApplication using Java 25.0.1 with PID 43812 (C:\Users\anush.x\Desktop\MLA_Anush\SpringBootRestAPIMySQLJPA\target\classes started by anush.x in C:\Users\anush.x\Desktop\MLA_Anush\SpringBootRestAPIMySQLJPA)
+2026-02-27T15:45:29.024+05:30  INFO 43812 --- [SpringBootRestAPIMySQLJPA] [restartedMain] c.t.SpringBootRestApiMySqljpaApplication : No active profile set, falling back to 1 default profile: "default"
+2026-02-27T15:45:29.090+05:30  INFO 43812 --- [SpringBootRestAPIMySQLJPA] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-02-27T15:45:29.091+05:30  INFO 43812 --- [SpringBootRestAPIMySQLJPA] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-02-27T15:45:30.307+05:30  INFO 43812 --- [SpringBootRestAPIMySQLJPA] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-27T15:45:30.371+05:30  INFO 43812 --- [SpringBootRestAPIMySQLJPA] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 53 ms. Found 1 JPA repository interface.
+2026-02-27T15:45:31.070+05:30  INFO 43812 --- [SpringBootRestAPIMySQLJPA] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 7766 (http)
+2026-02-27T15:45:31.098+05:30  INFO 43812 --- [SpringBootRestAPIMySQLJPA] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-27T15:45:31.098+05:30  INFO 43812 --- [SpringBootRestAPIMySQLJPA] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-02-27T15:45:31.190+05:30  INFO 43812 --- [SpringBootRestAPIMySQLJPA] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 2098 ms
+2026-02-27T15:45:31.552+05:30  INFO 43812 --- [SpringBootRestAPIMySQLJPA] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-02-27T15:45:31.728+05:30  INFO 43812 --- [SpringBootRestAPIMySQLJPA] [restartedMain] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.4.Final
+2026-02-27T15:45:32.358+05:30  INFO 43812 --- [SpringBootRestAPIMySQLJPA] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-27T15:45:32.422+05:30  INFO 43812 --- [SpringBootRestAPIMySQLJPA] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-02-27T15:45:32.890+05:30  INFO 43812 --- [SpringBootRestAPIMySQLJPA] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3ec8e35a
+2026-02-27T15:45:32.892+05:30  INFO 43812 --- [SpringBootRestAPIMySQLJPA] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-02-27T15:45:32.974+05:30  WARN 43812 --- [SpringBootRestAPIMySQLJPA] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-27T15:45:33.000+05:30  INFO 43812 --- [SpringBootRestAPIMySQLJPA] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/mlafeb]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.42
+	Default catalog/schema: mlafeb/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-02-27T15:45:34.137+05:30  INFO 43812 --- [SpringBootRestAPIMySQLJPA] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-27T15:45:34.306+05:30 DEBUG 43812 --- [SpringBootRestAPIMySQLJPA] [restartedMain] org.hibernate.SQL                        : alter table employee add column company varchar(255)
+2026-02-27T15:45:34.735+05:30 DEBUG 43812 --- [SpringBootRestAPIMySQLJPA] [restartedMain] org.hibernate.SQL                        : alter table employee add column name varchar(255)
+2026-02-27T15:45:34.808+05:30  INFO 43812 --- [SpringBootRestAPIMySQLJPA] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-27T15:45:34.905+05:30  INFO 43812 --- [SpringBootRestAPIMySQLJPA] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-02-27T15:45:35.150+05:30  WARN 43812 --- [SpringBootRestAPIMySQLJPA] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-27T15:45:35.833+05:30  INFO 43812 --- [SpringBootRestAPIMySQLJPA] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 13 endpoints beneath base path '/actuator'
+2026-02-27T15:45:35.945+05:30  INFO 43812 --- [SpringBootRestAPIMySQLJPA] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 7766 (http) with context path '/'
+2026-02-27T15:45:35.955+05:30  INFO 43812 --- [SpringBootRestAPIMySQLJPA] [restartedMain] c.t.SpringBootRestApiMySqljpaApplication : Started SpringBootRestApiMySqljpaApplication in 7.647 seconds (process running for 8.845)
+2026-02-27T15:45:35.963+05:30  WARN 43812 --- [SpringBootRestAPIMySQLJPA] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-02-27T15:45:35.964+05:30  WARN 43812 --- [SpringBootRestAPIMySQLJPA] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-02-27T15:45:36.601+05:30  INFO 43812 --- [SpringBootRestAPIMySQLJPA] [RMI TCP Connection(4)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-27T15:45:36.602+05:30  INFO 43812 --- [SpringBootRestAPIMySQLJPA] [RMI TCP Connection(4)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-02-27T15:45:36.606+05:30  INFO 43812 --- [SpringBootRestAPIMySQLJPA] [RMI TCP Connection(4)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2026-02-27T15:47:18.059+05:30  INFO 43812 --- [SpringBootRestAPIMySQLJPA] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-02-27T15:47:18.065+05:30  INFO 43812 --- [SpringBootRestAPIMySQLJPA] [Thread-1] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-02-27T15:47:18.072+05:30  INFO 43812 --- [SpringBootRestAPIMySQLJPA] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-02-27T15:47:18.081+05:30  INFO 43812 --- [SpringBootRestAPIMySQLJPA] [Thread-1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-27T15:47:18.085+05:30  INFO 43812 --- [SpringBootRestAPIMySQLJPA] [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-02-27T15:47:18.094+05:30  INFO 43812 --- [SpringBootRestAPIMySQLJPA] [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-02-27T15:47:18.323+05:30  INFO 43812 --- [SpringBootRestAPIMySQLJPA] [restartedMain] c.t.SpringBootRestApiMySqljpaApplication : Starting SpringBootRestApiMySqljpaApplication using Java 25.0.1 with PID 43812 (C:\Users\anush.x\Desktop\MLA_Anush\SpringBootRestAPIMySQLJPA\target\classes started by anush.x in C:\Users\anush.x\Desktop\MLA_Anush\SpringBootRestAPIMySQLJPA)
+2026-02-27T15:47:18.323+05:30  INFO 43812 --- [SpringBootRestAPIMySQLJPA] [restartedMain] c.t.SpringBootRestApiMySqljpaApplication : No active profile set, falling back to 1 default profile: "default"
+2026-02-27T15:47:18.905+05:30  INFO 43812 --- [SpringBootRestAPIMySQLJPA] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-27T15:47:18.925+05:30  INFO 43812 --- [SpringBootRestAPIMySQLJPA] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15 ms. Found 1 JPA repository interface.
+2026-02-27T15:47:19.072+05:30  INFO 43812 --- [SpringBootRestAPIMySQLJPA] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 7766 (http)
+2026-02-27T15:47:19.073+05:30  INFO 43812 --- [SpringBootRestAPIMySQLJPA] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-27T15:47:19.073+05:30  INFO 43812 --- [SpringBootRestAPIMySQLJPA] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-02-27T15:47:19.112+05:30  INFO 43812 --- [SpringBootRestAPIMySQLJPA] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 784 ms
+2026-02-27T15:47:19.170+05:30  INFO 43812 --- [SpringBootRestAPIMySQLJPA] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-02-27T15:47:19.222+05:30  INFO 43812 --- [SpringBootRestAPIMySQLJPA] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-27T15:47:19.224+05:30  INFO 43812 --- [SpringBootRestAPIMySQLJPA] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2026-02-27T15:47:20.291+05:30  WARN 43812 --- [SpringBootRestAPIMySQLJPA] [restartedMain] org.hibernate.orm.jdbc.error             : HHH000247: ErrorCode: 1049, SQLState: 42000
+2026-02-27T15:47:20.291+05:30  WARN 43812 --- [SpringBootRestAPIMySQLJPA] [restartedMain] org.hibernate.orm.jdbc.error             : Unknown database 'feb_'
+2026-02-27T15:47:20.292+05:30  WARN 43812 --- [SpringBootRestAPIMySQLJPA] [restartedMain] org.hibernate.orm.jdbc                   : HHH100046: Could not obtain connection to query JDBC database metadata
+
+org.hibernate.exception.SQLGrammarException: Unable to obtain isolated JDBC connection [Unknown database 'feb_'] [n/a]
+	at org.hibernate.exception.internal.SQLStateConversionDelegate.convert(SQLStateConversionDelegate.java:63) ~[hibernate-core-7.2.4.Final.jar:7.2.4.Final]
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:34) ~[hibernate-core-7.2.4.Final.jar:7.2.4.Final]
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:115) ~[hibernate-core-7.2.4.Final.jar:7.2.4.Final]
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:101) ~[hibernate-core-7.2.4.Final.jar:7.2.4.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:51) ~[hibernate-core-7.2.4.Final.jar:7.2.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentUsingJdbcMetadata(JdbcEnvironmentInitiator.java:366) ~[hibernate-core-7.2.4.Final.jar:7.2.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironment(JdbcEnvironmentInitiator.java:143) ~[hibernate-core-7.2.4.Final.jar:7.2.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:120) ~[hibernate-core-7.2.4.Final.jar:7.2.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:80) ~[hibernate-core-7.2.4.Final.jar:7.2.4.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:133) ~[hibernate-core-7.2.4.Final.jar:7.2.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:260) ~[hibernate-core-7.2.4.Final.jar:7.2.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:235) ~[hibernate-core-7.2.4.Final.jar:7.2.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:212) ~[hibernate-core-7.2.4.Final.jar:7.2.4.Final]
+	at org.hibernate.boot.model.relational.Database.<init>(Database.java:44) ~[hibernate-core-7.2.4.Final.jar:7.2.4.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:251) ~[hibernate-core-7.2.4.Final.jar:7.2.4.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:203) ~[hibernate-core-7.2.4.Final.jar:7.2.4.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:170) ~[hibernate-core-7.2.4.Final.jar:7.2.4.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1392) ~[hibernate-core-7.2.4.Final.jar:7.2.4.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.populateSessionFactoryBuilder(EntityManagerFactoryBuilderImpl.java:1472) ~[hibernate-core-7.2.4.Final.jar:7.2.4.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1454) ~[hibernate-core-7.2.4.Final.jar:7.2.4.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:93) ~[spring-orm-7.0.5.jar:7.0.5]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:443) ~[spring-orm-7.0.5.jar:7.0.5]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:436) ~[spring-orm-7.0.5.jar:7.0.5]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:411) ~[spring-orm-7.0.5.jar:7.0.5]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:419) ~[spring-orm-7.0.5.jar:7.0.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1864) ~[spring-beans-7.0.5.jar:7.0.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1813) ~[spring-beans-7.0.5.jar:7.0.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:603) ~[spring-beans-7.0.5.jar:7.0.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:525) ~[spring-beans-7.0.5.jar:7.0.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:333) ~[spring-beans-7.0.5.jar:7.0.5]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371) ~[spring-beans-7.0.5.jar:7.0.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:331) ~[spring-beans-7.0.5.jar:7.0.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:201) ~[spring-beans-7.0.5.jar:7.0.5]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:977) ~[spring-context-7.0.5.jar:7.0.5]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:621) ~[spring-context-7.0.5.jar:7.0.5]
+	at org.springframework.boot.web.server.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143) ~[spring-boot-web-server-4.0.3.jar:4.0.3]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:756) ~[spring-boot-4.0.3.jar:4.0.3]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:445) ~[spring-boot-4.0.3.jar:4.0.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:321) ~[spring-boot-4.0.3.jar:4.0.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1365) ~[spring-boot-4.0.3.jar:4.0.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354) ~[spring-boot-4.0.3.jar:4.0.3]
+	at com.test.SpringBootRestApiMySqljpaApplication.main(SpringBootRestApiMySqljpaApplication.java:10) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:52) ~[spring-boot-devtools-4.0.3.jar:4.0.3]
+Caused by: java.sql.SQLSyntaxErrorException: Unknown database 'feb_'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112) ~[mysql-connector-j-9.6.0.jar:9.6.0]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114) ~[mysql-connector-j-9.6.0.jar:9.6.0]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:840) ~[mysql-connector-j-9.6.0.jar:9.6.0]
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:416) ~[mysql-connector-j-9.6.0.jar:9.6.0]
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:237) ~[mysql-connector-j-9.6.0.jar:9.6.0]
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:180) ~[mysql-connector-j-9.6.0.jar:9.6.0]
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:144) ~[HikariCP-7.0.2.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:373) ~[HikariCP-7.0.2.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:210) ~[HikariCP-7.0.2.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:488) ~[HikariCP-7.0.2.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:576) ~[HikariCP-7.0.2.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:97) ~[HikariCP-7.0.2.jar:na]
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:111) ~[HikariCP-7.0.2.jar:na]
+	at org.hibernate.engine.jdbc.connections.internal.DataSourceConnectionProvider.getConnection(DataSourceConnectionProvider.java:137) ~[hibernate-core-7.2.4.Final.jar:7.2.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:508) ~[hibernate-core-7.2.4.Final.jar:7.2.4.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:48) ~[hibernate-core-7.2.4.Final.jar:7.2.4.Final]
+	... 40 common frames omitted
+
+2026-02-27T15:47:20.302+05:30  WARN 43812 --- [SpringBootRestAPIMySQLJPA] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-27T15:47:20.310+05:30  INFO 43812 --- [SpringBootRestAPIMySQLJPA] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [undefined/unknown]
+	Database driver: undefined/unknown
+	Database dialect: MySQLDialect
+	Database version: 8.0
+	Default catalog/schema: unknown/unknown
+	Autocommit mode: undefined/unknown
+	Isolation level: NONE [default NONE]
+	JDBC fetch size: undefined/unknown
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-02-27T15:47:20.357+05:30  INFO 43812 --- [SpringBootRestAPIMySQLJPA] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-27T15:47:20.361+05:30  INFO 43812 --- [SpringBootRestAPIMySQLJPA] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2026-02-27T15:47:21.385+05:30  WARN 43812 --- [SpringBootRestAPIMySQLJPA] [restartedMain] org.hibernate.orm.jdbc.error             : HHH000247: ErrorCode: 1049, SQLState: 42000
+2026-02-27T15:47:21.386+05:30  WARN 43812 --- [SpringBootRestAPIMySQLJPA] [restartedMain] org.hibernate.orm.jdbc.error             : Unknown database 'feb_'
+2026-02-27T15:47:21.389+05:30 ERROR 43812 --- [SpringBootRestAPIMySQLJPA] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Failed to initialize JPA EntityManagerFactory: Unable to build Hibernate SessionFactory  [persistence unit: default] ; nested exception is org.hibernate.exception.SQLGrammarException: Unable to open JDBC Connection for DDL execution [Unknown database 'feb_'] [n/a]
+2026-02-27T15:47:21.390+05:30  WARN 43812 --- [SpringBootRestAPIMySQLJPA] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/hibernate/autoconfigure/HibernateJpaConfiguration.class]: Unable to build Hibernate SessionFactory  [persistence unit: default] ; nested exception is org.hibernate.exception.SQLGrammarException: Unable to open JDBC Connection for DDL execution [Unknown database 'feb_'] [n/a]
+2026-02-27T15:47:21.392+05:30  INFO 43812 --- [SpringBootRestAPIMySQLJPA] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2026-02-27T15:47:21.404+05:30  INFO 43812 --- [SpringBootRestAPIMySQLJPA] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-02-27T15:47:21.421+05:30 ERROR 43812 --- [SpringBootRestAPIMySQLJPA] [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/hibernate/autoconfigure/HibernateJpaConfiguration.class]: Unable to build Hibernate SessionFactory  [persistence unit: default] ; nested exception is org.hibernate.exception.SQLGrammarException: Unable to open JDBC Connection for DDL execution [Unknown database 'feb_'] [n/a]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1817) ~[spring-beans-7.0.5.jar:7.0.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:603) ~[spring-beans-7.0.5.jar:7.0.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:525) ~[spring-beans-7.0.5.jar:7.0.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:333) ~[spring-beans-7.0.5.jar:7.0.5]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371) ~[spring-beans-7.0.5.jar:7.0.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:331) ~[spring-beans-7.0.5.jar:7.0.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:201) ~[spring-beans-7.0.5.jar:7.0.5]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:977) ~[spring-context-7.0.5.jar:7.0.5]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:621) ~[spring-context-7.0.5.jar:7.0.5]
+	at org.springframework.boot.web.server.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143) ~[spring-boot-web-server-4.0.3.jar:4.0.3]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:756) ~[spring-boot-4.0.3.jar:4.0.3]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:445) ~[spring-boot-4.0.3.jar:4.0.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:321) ~[spring-boot-4.0.3.jar:4.0.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1365) ~[spring-boot-4.0.3.jar:4.0.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354) ~[spring-boot-4.0.3.jar:4.0.3]
+	at com.test.SpringBootRestApiMySqljpaApplication.main(SpringBootRestApiMySqljpaApplication.java:10) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:52) ~[spring-boot-devtools-4.0.3.jar:4.0.3]
+Caused by: jakarta.persistence.PersistenceException: Unable to build Hibernate SessionFactory  [persistence unit: default] ; nested exception is org.hibernate.exception.SQLGrammarException: Unable to open JDBC Connection for DDL execution [Unknown database 'feb_'] [n/a]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:448) ~[spring-orm-7.0.5.jar:7.0.5]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:411) ~[spring-orm-7.0.5.jar:7.0.5]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:419) ~[spring-orm-7.0.5.jar:7.0.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1864) ~[spring-beans-7.0.5.jar:7.0.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1813) ~[spring-beans-7.0.5.jar:7.0.5]
+	... 18 common frames omitted
+Caused by: org.hibernate.exception.SQLGrammarException: Unable to open JDBC Connection for DDL execution [Unknown database 'feb_'] [n/a]
+	at org.hibernate.exception.internal.SQLExceptionTypeDelegate.convert(SQLExceptionTypeDelegate.java:64) ~[hibernate-core-7.2.4.Final.jar:7.2.4.Final]
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:34) ~[hibernate-core-7.2.4.Final.jar:7.2.4.Final]
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:115) ~[hibernate-core-7.2.4.Final.jar:7.2.4.Final]
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:101) ~[hibernate-core-7.2.4.Final.jar:7.2.4.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:71) ~[hibernate-core-7.2.4.Final.jar:7.2.4.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:37) ~[hibernate-core-7.2.4.Final.jar:7.2.4.Final]
+	at org.hibernate.tool.schema.internal.exec.ImprovedExtractionContextImpl.getJdbcConnection(ImprovedExtractionContextImpl.java:61) ~[hibernate-core-7.2.4.Final.jar:7.2.4.Final]
+	at org.hibernate.tool.schema.internal.exec.ImprovedExtractionContextImpl.getJdbcDatabaseMetaData(ImprovedExtractionContextImpl.java:68) ~[hibernate-core-7.2.4.Final.jar:7.2.4.Final]
+	at org.hibernate.tool.schema.extract.internal.InformationExtractorJdbcDatabaseMetaDataImpl.getJdbcDatabaseMetaData(InformationExtractorJdbcDatabaseMetaDataImpl.java:38) ~[hibernate-core-7.2.4.Final.jar:7.2.4.Final]
+	at org.hibernate.tool.schema.extract.internal.InformationExtractorJdbcDatabaseMetaDataImpl.processTableResultSet(InformationExtractorJdbcDatabaseMetaDataImpl.java:76) ~[hibernate-core-7.2.4.Final.jar:7.2.4.Final]
+	at org.hibernate.tool.schema.extract.internal.AbstractInformationExtractorImpl.getTables(AbstractInformationExtractorImpl.java:496) ~[hibernate-core-7.2.4.Final.jar:7.2.4.Final]
+	at org.hibernate.tool.schema.extract.internal.DatabaseInformationImpl.getTablesInformation(DatabaseInformationImpl.java:124) ~[hibernate-core-7.2.4.Final.jar:7.2.4.Final]
+	at org.hibernate.tool.schema.internal.GroupedSchemaMigratorImpl.performTablesMigration(GroupedSchemaMigratorImpl.java:72) ~[hibernate-core-7.2.4.Final.jar:7.2.4.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:220) ~[hibernate-core-7.2.4.Final.jar:7.2.4.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:96) ~[hibernate-core-7.2.4.Final.jar:7.2.4.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:269) ~[hibernate-core-7.2.4.Final.jar:7.2.4.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$1(SchemaManagementToolCoordinator.java:101) ~[hibernate-core-7.2.4.Final.jar:7.2.4.Final]
+	at java.base/java.util.HashMap.forEach(HashMap.java:1430) ~[na:na]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:100) ~[hibernate-core-7.2.4.Final.jar:7.2.4.Final]
+	at org.hibernate.boot.internal.SessionFactoryObserverForSchemaExport.sessionFactoryCreated(SessionFactoryObserverForSchemaExport.java:35) ~[hibernate-core-7.2.4.Final.jar:7.2.4.Final]
+	at org.hibernate.internal.SessionFactoryObserverChain.sessionFactoryCreated(SessionFactoryObserverChain.java:33) ~[hibernate-core-7.2.4.Final.jar:7.2.4.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:323) ~[hibernate-core-7.2.4.Final.jar:7.2.4.Final]
+	at org.hibernate.internal.SessionFactoryRegistry.instantiateSessionFactory(SessionFactoryRegistry.java:64) ~[hibernate-core-7.2.4.Final.jar:7.2.4.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:437) ~[hibernate-core-7.2.4.Final.jar:7.2.4.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1456) ~[hibernate-core-7.2.4.Final.jar:7.2.4.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:93) ~[spring-orm-7.0.5.jar:7.0.5]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:443) ~[spring-orm-7.0.5.jar:7.0.5]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:436) ~[spring-orm-7.0.5.jar:7.0.5]
+	... 22 common frames omitted
+Caused by: java.sql.SQLSyntaxErrorException: Unknown database 'feb_'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112) ~[mysql-connector-j-9.6.0.jar:9.6.0]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114) ~[mysql-connector-j-9.6.0.jar:9.6.0]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:840) ~[mysql-connector-j-9.6.0.jar:9.6.0]
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:416) ~[mysql-connector-j-9.6.0.jar:9.6.0]
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:237) ~[mysql-connector-j-9.6.0.jar:9.6.0]
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:180) ~[mysql-connector-j-9.6.0.jar:9.6.0]
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:144) ~[HikariCP-7.0.2.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:373) ~[HikariCP-7.0.2.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:210) ~[HikariCP-7.0.2.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:488) ~[HikariCP-7.0.2.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:576) ~[HikariCP-7.0.2.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:97) ~[HikariCP-7.0.2.jar:na]
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:111) ~[HikariCP-7.0.2.jar:na]
+	at org.hibernate.engine.jdbc.connections.internal.DataSourceConnectionProvider.getConnection(DataSourceConnectionProvider.java:137) ~[hibernate-core-7.2.4.Final.jar:7.2.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:508) ~[hibernate-core-7.2.4.Final.jar:7.2.4.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:44) ~[hibernate-core-7.2.4.Final.jar:7.2.4.Final]
+	... 45 common frames omitted
+
+2026-02-27T15:47:22.891+05:30  INFO 43812 --- [SpringBootRestAPIMySQLJPA] [restartedMain] c.t.SpringBootRestApiMySqljpaApplication : Starting SpringBootRestApiMySqljpaApplication using Java 25.0.1 with PID 43812 (C:\Users\anush.x\Desktop\MLA_Anush\SpringBootRestAPIMySQLJPA\target\classes started by anush.x in C:\Users\anush.x\Desktop\MLA_Anush\SpringBootRestAPIMySQLJPA)
+2026-02-27T15:47:22.893+05:30  INFO 43812 --- [SpringBootRestAPIMySQLJPA] [restartedMain] c.t.SpringBootRestApiMySqljpaApplication : No active profile set, falling back to 1 default profile: "default"
+2026-02-27T15:47:23.197+05:30  INFO 43812 --- [SpringBootRestAPIMySQLJPA] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-27T15:47:23.212+05:30  INFO 43812 --- [SpringBootRestAPIMySQLJPA] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13 ms. Found 1 JPA repository interface.
+2026-02-27T15:47:23.333+05:30  INFO 43812 --- [SpringBootRestAPIMySQLJPA] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 7766 (http)
+2026-02-27T15:47:23.335+05:30  INFO 43812 --- [SpringBootRestAPIMySQLJPA] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-27T15:47:23.335+05:30  INFO 43812 --- [SpringBootRestAPIMySQLJPA] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-02-27T15:47:23.381+05:30  INFO 43812 --- [SpringBootRestAPIMySQLJPA] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 485 ms
+2026-02-27T15:47:23.452+05:30  INFO 43812 --- [SpringBootRestAPIMySQLJPA] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-02-27T15:47:23.486+05:30  INFO 43812 --- [SpringBootRestAPIMySQLJPA] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-27T15:47:23.488+05:30  INFO 43812 --- [SpringBootRestAPIMySQLJPA] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2026-02-27T15:47:23.514+05:30  INFO 43812 --- [SpringBootRestAPIMySQLJPA] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@e64543d
+2026-02-27T15:47:23.514+05:30  INFO 43812 --- [SpringBootRestAPIMySQLJPA] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2026-02-27T15:47:23.518+05:30  WARN 43812 --- [SpringBootRestAPIMySQLJPA] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-27T15:47:23.519+05:30  INFO 43812 --- [SpringBootRestAPIMySQLJPA] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/feb_mla]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.42
+	Default catalog/schema: feb_mla/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-02-27T15:47:23.569+05:30  INFO 43812 --- [SpringBootRestAPIMySQLJPA] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-27T15:47:23.614+05:30 DEBUG 43812 --- [SpringBootRestAPIMySQLJPA] [restartedMain] org.hibernate.SQL                        : create table employee (id integer not null auto_increment, company varchar(255), name varchar(255), primary key (id)) engine=InnoDB
+2026-02-27T15:47:23.763+05:30  INFO 43812 --- [SpringBootRestAPIMySQLJPA] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-27T15:47:23.862+05:30  WARN 43812 --- [SpringBootRestAPIMySQLJPA] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-27T15:47:24.046+05:30  INFO 43812 --- [SpringBootRestAPIMySQLJPA] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 13 endpoints beneath base path '/actuator'
+2026-02-27T15:47:24.077+05:30  INFO 43812 --- [SpringBootRestAPIMySQLJPA] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 7766 (http) with context path '/'
+2026-02-27T15:47:24.082+05:30  INFO 43812 --- [SpringBootRestAPIMySQLJPA] [restartedMain] c.t.SpringBootRestApiMySqljpaApplication : Started SpringBootRestApiMySqljpaApplication in 1.22 seconds (process running for 116.972)
+2026-02-27T15:47:24.084+05:30  WARN 43812 --- [SpringBootRestAPIMySQLJPA] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-02-27T15:47:24.085+05:30  WARN 43812 --- [SpringBootRestAPIMySQLJPA] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-02-27T15:47:24.087+05:30  INFO 43812 --- [SpringBootRestAPIMySQLJPA] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-02-27T15:47:24.364+05:30  INFO 43812 --- [SpringBootRestAPIMySQLJPA] [RMI TCP Connection(7)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2026-02-27T15:47:24.365+05:30  INFO 43812 --- [SpringBootRestAPIMySQLJPA] [RMI TCP Connection(7)-127.0.0.1] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-02-27T15:47:24.371+05:30  INFO 43812 --- [SpringBootRestAPIMySQLJPA] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-02-27T15:47:24.375+05:30  INFO 43812 --- [SpringBootRestAPIMySQLJPA] [RMI TCP Connection(7)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-27T15:47:24.376+05:30  INFO 43812 --- [SpringBootRestAPIMySQLJPA] [RMI TCP Connection(7)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2026-02-27T15:47:24.381+05:30  INFO 43812 --- [SpringBootRestAPIMySQLJPA] [RMI TCP Connection(7)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2026-02-27T15:47:32.469+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [restartedMain] c.t.SpringBootRestApiMySqljpaApplication : Starting SpringBootRestApiMySqljpaApplication using Java 25.0.1 with PID 13620 (C:\Users\anush.x\Desktop\MLA_Anush\SpringBootRestAPIMySQLJPA\target\classes started by anush.x in C:\Users\anush.x\Desktop\MLA_Anush\SpringBootRestAPIMySQLJPA)
+2026-02-27T15:47:32.473+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [restartedMain] c.t.SpringBootRestApiMySqljpaApplication : No active profile set, falling back to 1 default profile: "default"
+2026-02-27T15:47:32.545+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-02-27T15:47:32.546+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-02-27T15:47:34.202+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-27T15:47:34.274+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 58 ms. Found 1 JPA repository interface.
+2026-02-27T15:47:35.447+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 7766 (http)
+2026-02-27T15:47:35.507+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-27T15:47:35.508+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-02-27T15:47:35.701+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 3154 ms
+2026-02-27T15:47:36.324+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-02-27T15:47:36.443+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [restartedMain] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.4.Final
+2026-02-27T15:47:37.461+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-27T15:47:37.507+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-02-27T15:47:37.982+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@65229f91
+2026-02-27T15:47:37.984+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-02-27T15:47:38.100+05:30  WARN 13620 --- [SpringBootRestAPIMySQLJPA] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-27T15:47:38.136+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/feb_mla]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.42
+	Default catalog/schema: feb_mla/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-02-27T15:47:39.509+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-27T15:47:39.599+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-27T15:47:39.690+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-02-27T15:47:39.877+05:30  WARN 13620 --- [SpringBootRestAPIMySQLJPA] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-27T15:47:40.547+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 13 endpoints beneath base path '/actuator'
+2026-02-27T15:47:40.653+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 7766 (http) with context path '/'
+2026-02-27T15:47:40.663+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [restartedMain] c.t.SpringBootRestApiMySqljpaApplication : Started SpringBootRestApiMySqljpaApplication in 8.767 seconds (process running for 10.003)
+2026-02-27T15:47:40.672+05:30  WARN 13620 --- [SpringBootRestAPIMySQLJPA] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-02-27T15:47:40.672+05:30  WARN 13620 --- [SpringBootRestAPIMySQLJPA] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-02-27T15:47:40.893+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [RMI TCP Connection(4)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-27T15:47:40.893+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [RMI TCP Connection(4)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-02-27T15:47:40.895+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [RMI TCP Connection(4)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-02-27T15:48:48.977+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [http-nio-7766-exec-9] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 335 ms
+2026-02-27T15:49:43.560+05:30  WARN 13620 --- [SpringBootRestAPIMySQLJPA] [http-nio-7766-exec-10] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot map `null` into type `int` (set DeserializationConfig.DeserializationFeature.FAIL_ON_NULL_FOR_PRIMITIVES to 'false' to allow)]
+2026-02-27T15:51:10.390+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-02-27T15:51:10.395+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [Thread-1] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-02-27T15:51:10.400+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-02-27T15:51:10.406+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [Thread-1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-27T15:51:10.410+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-02-27T15:51:10.417+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-02-27T15:51:10.536+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [restartedMain] c.t.SpringBootRestApiMySqljpaApplication : Starting SpringBootRestApiMySqljpaApplication using Java 25.0.1 with PID 13620 (C:\Users\anush.x\Desktop\MLA_Anush\SpringBootRestAPIMySQLJPA\target\classes started by anush.x in C:\Users\anush.x\Desktop\MLA_Anush\SpringBootRestAPIMySQLJPA)
+2026-02-27T15:51:10.537+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [restartedMain] c.t.SpringBootRestApiMySqljpaApplication : No active profile set, falling back to 1 default profile: "default"
+2026-02-27T15:51:10.868+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-27T15:51:10.884+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13 ms. Found 1 JPA repository interface.
+2026-02-27T15:51:11.046+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 7766 (http)
+2026-02-27T15:51:11.048+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-27T15:51:11.049+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-02-27T15:51:11.091+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 551 ms
+2026-02-27T15:51:11.159+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-02-27T15:51:11.197+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-27T15:51:11.199+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2026-02-27T15:51:11.226+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@75acaa28
+2026-02-27T15:51:11.227+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2026-02-27T15:51:11.230+05:30  WARN 13620 --- [SpringBootRestAPIMySQLJPA] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-27T15:51:11.232+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/feb_mla]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.42
+	Default catalog/schema: feb_mla/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-02-27T15:51:11.274+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-27T15:51:11.297+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-27T15:51:11.415+05:30  WARN 13620 --- [SpringBootRestAPIMySQLJPA] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-27T15:51:11.450+05:30  WARN 13620 --- [SpringBootRestAPIMySQLJPA] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/webmvc/autoconfigure/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Unsatisfied dependency expressed through method 'requestMappingHandlerMapping' parameter 0: Error creating bean with name 'mvcContentNegotiationManager' defined in class path resource [org/springframework/boot/webmvc/autoconfigure/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Failed to instantiate [org.springframework.web.accept.ContentNegotiationManager]: Factory method 'mvcContentNegotiationManager' threw exception with message: Error creating bean with name 'jacksonJsonHttpMessageConvertersCustomizer' defined in class path resource [org/springframework/boot/http/converter/autoconfigure/JacksonHttpMessageConvertersConfiguration$JacksonJsonHttpMessageConverterConfiguration.class]: Unsatisfied dependency expressed through method 'jacksonJsonHttpMessageConvertersCustomizer' parameter 0: Error creating bean with name 'jacksonJsonMapper' defined in class path resource [org/springframework/boot/jackson/autoconfigure/JacksonAutoConfiguration.class]: Unsatisfied dependency expressed through method 'jacksonJsonMapper' parameter 0: Error creating bean with name 'jsonMapperBuilder' defined in class path resource [org/springframework/boot/jackson/autoconfigure/JacksonAutoConfiguration.class]: Unsatisfied dependency expressed through method 'jsonMapperBuilder' parameter 0: Error creating bean with name 'standardJsonMapperBuilderCustomizer' defined in class path resource [org/springframework/boot/jackson/autoconfigure/JacksonAutoConfiguration$JacksonJsonMapperBuilderCustomizerConfiguration.class]: Unsatisfied dependency expressed through method 'standardJsonMapperBuilderCustomizer' parameter 0: Error creating bean with name 'spring.jackson-org.springframework.boot.jackson.autoconfigure.JacksonProperties': Could not bind properties to 'JacksonProperties' : prefix=spring.jackson, ignoreInvalidFields=false, ignoreUnknownFields=true
+2026-02-27T15:51:11.452+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-27T15:51:11.457+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2026-02-27T15:51:11.498+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2026-02-27T15:51:11.501+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2026-02-27T15:51:11.517+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-02-27T15:51:11.543+05:30 ERROR 13620 --- [SpringBootRestAPIMySQLJPA] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to bind properties under 'spring.jackson.deserialization' to java.util.Map<tools.jackson.databind.DeserializationFeature, java.lang.Boolean>:
+
+    Property: spring.jackson.deserialization
+    Value: ""
+    Origin: class path resource [application.yml] - 23:21
+    Reason: org.springframework.core.convert.ConverterNotFoundException: No converter found capable of converting from type [java.lang.String] to type [java.util.Map<tools.jackson.databind.DeserializationFeature, java.lang.Boolean>]
+
+Action:
+
+Update your application's configuration
+
+2026-02-27T15:51:28.288+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [restartedMain] c.t.SpringBootRestApiMySqljpaApplication : Starting SpringBootRestApiMySqljpaApplication using Java 25.0.1 with PID 13620 (C:\Users\anush.x\Desktop\MLA_Anush\SpringBootRestAPIMySQLJPA\target\classes started by anush.x in C:\Users\anush.x\Desktop\MLA_Anush\SpringBootRestAPIMySQLJPA)
+2026-02-27T15:51:28.289+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [restartedMain] c.t.SpringBootRestApiMySqljpaApplication : No active profile set, falling back to 1 default profile: "default"
+2026-02-27T15:51:28.808+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-27T15:51:28.829+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 17 ms. Found 1 JPA repository interface.
+2026-02-27T15:51:29.000+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 7766 (http)
+2026-02-27T15:51:29.002+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-27T15:51:29.003+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-02-27T15:51:29.051+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 759 ms
+2026-02-27T15:51:29.111+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-02-27T15:51:29.143+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-27T15:51:29.144+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2026-02-27T15:51:29.167+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@43c11849
+2026-02-27T15:51:29.167+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2026-02-27T15:51:29.170+05:30  WARN 13620 --- [SpringBootRestAPIMySQLJPA] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-27T15:51:29.171+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/feb_mla]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.42
+	Default catalog/schema: feb_mla/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-02-27T15:51:29.223+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-27T15:51:29.235+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-27T15:51:29.306+05:30  WARN 13620 --- [SpringBootRestAPIMySQLJPA] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-27T15:51:29.583+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 13 endpoints beneath base path '/actuator'
+2026-02-27T15:51:29.625+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 7766 (http) with context path '/'
+2026-02-27T15:51:29.630+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [restartedMain] c.t.SpringBootRestApiMySqljpaApplication : Started SpringBootRestApiMySqljpaApplication in 1.379 seconds (process running for 238.968)
+2026-02-27T15:51:29.632+05:30  WARN 13620 --- [SpringBootRestAPIMySQLJPA] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-02-27T15:51:29.632+05:30  WARN 13620 --- [SpringBootRestAPIMySQLJPA] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-02-27T15:51:29.634+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-02-27T15:52:13.619+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-02-27T15:52:13.621+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [Thread-5] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-02-27T15:52:13.626+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-02-27T15:52:13.630+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-27T15:52:13.631+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2026-02-27T15:52:13.635+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2026-02-27T15:52:13.763+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [restartedMain] c.t.SpringBootRestApiMySqljpaApplication : Starting SpringBootRestApiMySqljpaApplication using Java 25.0.1 with PID 13620 (C:\Users\anush.x\Desktop\MLA_Anush\SpringBootRestAPIMySQLJPA\target\classes started by anush.x in C:\Users\anush.x\Desktop\MLA_Anush\SpringBootRestAPIMySQLJPA)
+2026-02-27T15:52:13.763+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [restartedMain] c.t.SpringBootRestApiMySqljpaApplication : No active profile set, falling back to 1 default profile: "default"
+2026-02-27T15:52:14.104+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-27T15:52:14.118+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 1 JPA repository interface.
+2026-02-27T15:52:14.241+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 7766 (http)
+2026-02-27T15:52:14.242+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-27T15:52:14.242+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-02-27T15:52:14.280+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 514 ms
+2026-02-27T15:52:14.330+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-02-27T15:52:14.363+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-27T15:52:14.364+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2026-02-27T15:52:14.383+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7dce8fd4
+2026-02-27T15:52:14.384+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2026-02-27T15:52:14.386+05:30  WARN 13620 --- [SpringBootRestAPIMySQLJPA] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-27T15:52:14.387+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/feb_mla]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.42
+	Default catalog/schema: feb_mla/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-02-27T15:52:14.423+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-27T15:52:14.437+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-27T15:52:14.511+05:30  WARN 13620 --- [SpringBootRestAPIMySQLJPA] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-27T15:52:14.699+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 13 endpoints beneath base path '/actuator'
+2026-02-27T15:52:14.741+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 7766 (http) with context path '/'
+2026-02-27T15:52:14.746+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [restartedMain] c.t.SpringBootRestApiMySqljpaApplication : Started SpringBootRestApiMySqljpaApplication in 1.02 seconds (process running for 284.083)
+2026-02-27T15:52:14.748+05:30  WARN 13620 --- [SpringBootRestAPIMySQLJPA] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-02-27T15:52:14.749+05:30  WARN 13620 --- [SpringBootRestAPIMySQLJPA] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-02-27T15:52:14.750+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-02-27T15:52:21.774+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [http-nio-7766-exec-1] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-27T15:52:21.774+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [http-nio-7766-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-02-27T15:52:21.777+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [http-nio-7766-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2026-02-27T15:52:21.841+05:30 DEBUG 13620 --- [SpringBootRestAPIMySQLJPA] [http-nio-7766-exec-1] org.hibernate.SQL                        : insert into employee (company,name) values (?,?)
+2026-02-27T15:54:25.084+05:30 DEBUG 13620 --- [SpringBootRestAPIMySQLJPA] [http-nio-7766-exec-3] org.hibernate.SQL                        : insert into employee (company,name) values (?,?)
+2026-02-27T15:55:01.172+05:30 DEBUG 13620 --- [SpringBootRestAPIMySQLJPA] [http-nio-7766-exec-4] org.hibernate.SQL                        : select e1_0.id,e1_0.company,e1_0.name from employee e1_0 where e1_0.id=?
+2026-02-27T15:55:06.785+05:30 DEBUG 13620 --- [SpringBootRestAPIMySQLJPA] [http-nio-7766-exec-5] org.hibernate.SQL                        : select e1_0.id,e1_0.company,e1_0.name from employee e1_0 where e1_0.id=?
+2026-02-27T15:55:11.723+05:30 DEBUG 13620 --- [SpringBootRestAPIMySQLJPA] [http-nio-7766-exec-6] org.hibernate.SQL                        : select e1_0.id,e1_0.company,e1_0.name from employee e1_0 where e1_0.id=?
+2026-02-27T15:55:58.221+05:30 DEBUG 13620 --- [SpringBootRestAPIMySQLJPA] [http-nio-7766-exec-7] org.hibernate.SQL                        : select e1_0.id,e1_0.company,e1_0.name from employee e1_0 where e1_0.id=?
+2026-02-27T15:55:58.236+05:30 DEBUG 13620 --- [SpringBootRestAPIMySQLJPA] [http-nio-7766-exec-7] org.hibernate.SQL                        : update employee set company=?,name=? where id=?
+2026-02-27T15:56:19.426+05:30 DEBUG 13620 --- [SpringBootRestAPIMySQLJPA] [http-nio-7766-exec-8] org.hibernate.SQL                        : select e1_0.id,e1_0.company,e1_0.name from employee e1_0
+2026-02-27T15:56:47.735+05:30 DEBUG 13620 --- [SpringBootRestAPIMySQLJPA] [http-nio-7766-exec-9] org.hibernate.SQL                        : select e1_0.id,e1_0.company,e1_0.name from employee e1_0 where e1_0.id=?
+2026-02-27T15:56:47.747+05:30 DEBUG 13620 --- [SpringBootRestAPIMySQLJPA] [http-nio-7766-exec-9] org.hibernate.SQL                        : delete from employee where id=?
+2026-02-27T15:56:47.769+05:30 DEBUG 13620 --- [SpringBootRestAPIMySQLJPA] [http-nio-7766-exec-9] org.hibernate.SQL                        : select e1_0.id,e1_0.company,e1_0.name from employee e1_0
+2026-02-27T15:57:15.414+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-02-27T15:57:15.423+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [Thread-12] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-02-27T15:57:15.429+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-02-27T15:57:15.432+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [Thread-12] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-27T15:57:15.433+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [Thread-12] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
+2026-02-27T15:57:15.439+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [Thread-12] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
+2026-02-27T15:57:15.613+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [restartedMain] c.t.SpringBootRestApiMySqljpaApplication : Starting SpringBootRestApiMySqljpaApplication using Java 25.0.1 with PID 13620 (C:\Users\anush.x\Desktop\MLA_Anush\SpringBootRestAPIMySQLJPA\target\classes started by anush.x in C:\Users\anush.x\Desktop\MLA_Anush\SpringBootRestAPIMySQLJPA)
+2026-02-27T15:57:15.614+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [restartedMain] c.t.SpringBootRestApiMySqljpaApplication : No active profile set, falling back to 1 default profile: "default"
+2026-02-27T15:57:15.901+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-27T15:57:15.917+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13 ms. Found 1 JPA repository interface.
+2026-02-27T15:57:16.048+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 7766 (http)
+2026-02-27T15:57:16.051+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-27T15:57:16.051+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-02-27T15:57:16.092+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 476 ms
+2026-02-27T15:57:16.152+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-02-27T15:57:16.192+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-27T15:57:16.196+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Starting...
+2026-02-27T15:57:16.226+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-5 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4e721e4d
+2026-02-27T15:57:16.226+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Start completed.
+2026-02-27T15:57:16.229+05:30  WARN 13620 --- [SpringBootRestAPIMySQLJPA] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-27T15:57:16.230+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/feb_mla]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.42
+	Default catalog/schema: feb_mla/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-02-27T15:57:16.272+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-27T15:57:16.289+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-27T15:57:16.365+05:30  WARN 13620 --- [SpringBootRestAPIMySQLJPA] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-27T15:57:16.545+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 13 endpoints beneath base path '/actuator'
+2026-02-27T15:57:16.590+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 7766 (http) with context path '/'
+2026-02-27T15:57:16.596+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [restartedMain] c.t.SpringBootRestApiMySqljpaApplication : Started SpringBootRestApiMySqljpaApplication in 1.015 seconds (process running for 585.932)
+2026-02-27T15:57:16.598+05:30  WARN 13620 --- [SpringBootRestAPIMySQLJPA] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-02-27T15:57:16.598+05:30  WARN 13620 --- [SpringBootRestAPIMySQLJPA] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-02-27T15:57:16.600+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-02-27T15:57:19.980+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-02-27T15:57:19.983+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [Thread-16] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-02-27T15:57:19.987+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-02-27T15:57:19.990+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [Thread-16] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-27T15:57:19.991+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [Thread-16] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown initiated...
+2026-02-27T15:57:19.996+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [Thread-16] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown completed.
+2026-02-27T15:57:20.096+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [restartedMain] c.t.SpringBootRestApiMySqljpaApplication : Starting SpringBootRestApiMySqljpaApplication using Java 25.0.1 with PID 13620 (C:\Users\anush.x\Desktop\MLA_Anush\SpringBootRestAPIMySQLJPA\target\classes started by anush.x in C:\Users\anush.x\Desktop\MLA_Anush\SpringBootRestAPIMySQLJPA)
+2026-02-27T15:57:20.096+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [restartedMain] c.t.SpringBootRestApiMySqljpaApplication : No active profile set, falling back to 1 default profile: "default"
+2026-02-27T15:57:20.343+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-27T15:57:20.358+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 1 JPA repository interface.
+2026-02-27T15:57:20.478+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 7766 (http)
+2026-02-27T15:57:20.479+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-27T15:57:20.479+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-02-27T15:57:20.533+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 434 ms
+2026-02-27T15:57:20.596+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-02-27T15:57:20.633+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-27T15:57:20.634+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Starting...
+2026-02-27T15:57:20.656+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-6 - Added connection com.mysql.cj.jdbc.ConnectionImpl@442428fb
+2026-02-27T15:57:20.656+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Start completed.
+2026-02-27T15:57:20.658+05:30  WARN 13620 --- [SpringBootRestAPIMySQLJPA] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-27T15:57:20.660+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/feb_mla]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.42
+	Default catalog/schema: feb_mla/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-02-27T15:57:20.698+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-27T15:57:20.710+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-27T15:57:20.790+05:30  WARN 13620 --- [SpringBootRestAPIMySQLJPA] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-27T15:57:20.991+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 13 endpoints beneath base path '/actuator'
+2026-02-27T15:57:21.025+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 7766 (http) with context path '/'
+2026-02-27T15:57:21.029+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [restartedMain] c.t.SpringBootRestApiMySqljpaApplication : Started SpringBootRestApiMySqljpaApplication in 0.96 seconds (process running for 590.364)
+2026-02-27T15:57:21.030+05:30  WARN 13620 --- [SpringBootRestAPIMySQLJPA] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-02-27T15:57:21.030+05:30  WARN 13620 --- [SpringBootRestAPIMySQLJPA] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-02-27T15:57:21.031+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-02-27T15:57:55.047+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [RMI TCP Connection(14)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2026-02-27T15:57:55.048+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [RMI TCP Connection(14)-127.0.0.1] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-02-27T15:57:55.053+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-02-27T15:57:55.056+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [RMI TCP Connection(14)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-27T15:57:55.057+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [RMI TCP Connection(14)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown initiated...
+2026-02-27T15:57:55.061+05:30  INFO 13620 --- [SpringBootRestAPIMySQLJPA] [RMI TCP Connection(14)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown completed.
