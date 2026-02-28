@@ -8,6 +8,7 @@ import org.springframework.stereotype.Repository;
 
 import com.test.dao.EmployeeDao;
 import com.test.entity.Employee;
+import com.test.exceptions.EmployeeNotFoundException;
 import com.test.repository.EmployeeRepository;
 
 @Repository
@@ -29,7 +30,7 @@ public class EmployeeDaoImpl implements EmployeeDao{
 	@Override
 	public Optional<Employee> getEmployeeById(int id) {
 		
-		return repository.findById(id);
+		return Optional.ofNullable(repository.findById(id).orElseThrow(() -> new EmployeeNotFoundException("Employee with id not found")));
 	}
 
 	@Override
