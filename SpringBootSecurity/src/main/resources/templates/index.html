@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	  xmlns:th="https://www.thymeleaf.org"
+	  xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras=springsecurity3">
+<head>
+<meta charset="UTF-8">
+<title>Home</title>
+</head>
+<body>
+<!-- 		<h1 th:inline="text">Spring Security <span sec:authentication="name"></span></h1> -->
+<!-- 		ONLY USER | ADMIN <a href="/user/read" alt="read details">Read</a><br><br> -->
+<!-- 		ADMIN <a href="/delete" alt="delete details">Delete</a><br><br> -->
+<!-- 		ADMIN <a href="/update" alt="update details">Update</a><br><br> -->
+<!-- 		HR | EMPLOYEE | ADMIN <a href="/user/hr/onboard" alt="HR details">Onboard</a><br><br> -->
+		
+<!-- 		<form th:action="@{/logout}" method="post"> -->
+<!-- 			<input type="submit" value="Sign Out"> -->
+<!-- 		</form> -->
+
+		<div align="center">
+			<div sec:authorize="isAuthenticated()">
+				Welcome <b><span sec:authentication="name">Username</span></b>
+				&nbsp;
+				<i><span sec:authentication="principal.authorities"></span></i>
+			</div>
+			<form th:action="@{/logout}" method="post">
+				<input type="submit" value="logout" />
+			</form>
+			<h1> AUTHORITY | ACCESS</h1>
+			<div sec:authorize="hasAnyAuthority('ROLE_USER','ROLE_ADMIN')">
+				<a href="user/read">READ USER DATA</a><br><br>
+			</div>
+			<div sec:authorize="hasAuthority('ROLE_ADMIN')">
+				<a href="delete">DELETE USER DATA</a><br><br>
+				<a href="update">UPDATE USER DATA</a><br><br>
+				<a href="user/hr/onboard">HR | EMPLOYEE</a><br><br>
+			</div>
+			<div sec:authorize="hasAnyAuthority('ROLE_HR','ROLE_EMPLOYEE')">
+				<a href="user/hr/onboard">HR | EMPLOYEE</a>
+			</div>
+		</div>
+</body>
+</html>
