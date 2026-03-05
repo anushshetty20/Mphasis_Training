@@ -1,0 +1,213 @@
+JSP -> small application uses JSP because of long process.
+	.jsp ->.java -> .class -> execution
+Servlet -> Big application uses Servlet because of small process.
+	.java -> .class -> execution	
+
+
+Async Servlet
+
+Sync Servlet
+
+how to import jar to project path:
+project name > right click > 
+
+Hibernate ORM : 
+java application -> object -> ORM -> Database
+
+JNDI -> Java naming directory interface
+JTA -> java Transaction API, used for commit and rollback
+
+API's used by hibernate : JNDI,JDBC,JTA
+
+hibernate is an framework
+JPA(java persistent api) is an java specification
+
+Advantage of Hibernate:
+1.Open source and lightweight
+2.fast performance bcz of first and second level caching
+3.Database independent Query
+4.Autamatic table creation
+5.Simplifies complex Join
+6.provides query statistic and database status
+
+
+@OnetoOne -> One instance maps to exactly one other instance -> inner join
+@ManytoOne -> left join
+@OnetoMany -> right join
+@ManytoMany -> full join
+@JoinTable -> 
+
+First Level Cache -> maintained by session object. enabled by default. first level cache data is available only for that session object.it will not be so for the entire 			application
+Second level cache -> held by SessionFactory object. the data is this cache is available for entire application. But it is not enabled by default. Instead we have to enable it 			explicitly
+			other cache providers:
+			hashtable, OScache, jBoss cache, EHcache, SwamCache
+
+ cache Strategy:
+1.read only
+2.read/write
+3.nonstrict read/write
+4.transactional
+
+Bean states:
+object creation -> transient state
+database insert operation -> persistent state
+while removing session object -> detached state
+
+Granularity:
+1.Single table strategy -> all classes in hierarchy are mapped to a single table
+		problem -> multiple null values
+2.Joined table strategy -> base class contains common attribute and sub class contain subclass specific attribute with foreign key linking them
+		problem -> it need complex joins and multiple joins
+3.Table per class Strategy -> each class in the hierarchy has its own table with all attribute from the class and its superclass
+		problem -> data redundancy as common attribute are repeated across multiple tables
+
+N+1 problem in Hibernate:
+	executes one initial database query to retrieve list of parent entries and then N additional queries to fetch lazily loaded child entries
+
+
+Mappings :
+
+OneToOne
+OneToMany
+ManyToOne
+ManyToMany
+
+
+
+Spring Framework : Frameworks of Framework
+		
+Features :
+1. IOC container (BeanFactory & ApplicationContext)
+2. dependency injection
+3. Spring AOP -> Aspect oriented programming -> To support declaration transaction and authentication, authorization and encryption and decryption, 
+						cross cutting
+4. Data access and abstraction 
+5. Transaction management
+6. Spring MVC & webflux
+7. Suppports testing
+8. Integration capabilities
+
+
+Default bean scope in Spring framework -> singleton scope (for entire application single object)
+	other bean scopes -> prototype scope (every req one object)
+			     session scope (once session expires, bean also expires)
+			     request scope (each req one object)
+			     global session scope
+
+
+
+
+AppilcationContext is child of BeanFactory -> ApplicationContext support more than one configuration
+
+
+Advantages : 
+1. lightweight -> minimal coding
+2. Loose coupling
+3. Improved testing -> bcz of modularity
+4. Modularity and Flexibility (Layered architecture ) 
+5. Strong community and ecosystem
+6. POJO based development
+
+Bean Life Cycle Methods :
+	Container started -> Bean Instantiated -> Dependency injected -> Custom init() -> Custom utility method -> Custom destroy()
+
+AutoWire types :
+	byName
+	byType
+	Constructor
+	default
+	no
+
+
+Annotation : 
+	@Primary annotation :	purpose is to force a single implementation class to be chosen from multiple implemenmtations and if spring doesn't know which one to choose 				we tell it the default one
+	@Qualifier annotation : purpose is to specify the name of the bean for dependency injection
+
+setter injection -> partial dependency injection
+constructor injection -> complete dependency injection -> when we need to take all the field value compulsorily      like all fields are mandatory, if we leave any one field at 				that time we will get UnsatisfiedDependencyException
+
+Spring AOP vs AspectJ
+
+cross cutting concerns -> can affect whole application -> should be centralized in one location -> like in transaction management, authentication, logging etc
+
+Hibernate Objects : 
+
+1. Transient -> exist in heap as normal java objects. Hibernate doesn't manage transient entities or persist changes done on them.
+
+			POJO
+			 |
+			 |
+		       CLIENT    [Transient objects are independent of Hibernate]
+
+
+2. Persistent -> exist in DB -> Hibernate manages the persistence for Persistent Object
+
+			POJO <--> session <--> Database <--> POJO table
+			 ||
+			 ||
+		       CLIENT
+		[Persistent objects exist in the database and Maintained by Hibernate]
+	[if fields are changed on a persistent object, Hibernate will keep the DB representation up to date when application marks the changes as to be committed]
+
+
+3. Detached : entities have representation in DB, but changes to entity will not be reflected in the DB and vice-versa.
+		
+		Detached Object
+			POJO                Database <--> POJO table
+			 ||								 
+			 ||
+		       CLIENT
+	[Detached objects exist in the database but are not maintained by Hibernate]
+
+
+
+Propagation :
+	defines our business logic's transaction boundary. spring manages to start and pause a transaction according to our propagation setting.
+
+
+web service -> design pattern -> SOA architecture -> [service oriented architecture]
+
+SOAP [simple object access protocol]
+
+JAVA web services API types:
+	JAX-WS(SOAP)     ->   now outdated
+		RPC style
+		Document style
+	JAX-RS(RESTful)
+		Jersey
+		RESTeasy
+
+@SpringBootApplication = @ComponentScan + @SpringBootConfiguration + @EnableAutoConfiguration
+
+
+
+What is Spring boot :
+
+it is basically an extension of the Spring framework which eliminated the boilerplate configuration required for setting up a apring application.
+
+'starter' dependencies to simplify build and application configuration. automatic config for Spring functionality - whenever possible
+
+Spring module provides RAD(Rapid application development)
+
+Spring framework   +     Embedded HTTP server     -     XMLConfiguration    =   Spring Boot
+		        (tomcat,jetty,Undertow)        or @Configuration
+
+
+
+default return statement for @Controller ---> ModelAndView
+
+@RestController = @ResponseBody + @Controller
+
+@RequestBody -> it converts metadata format data to java object by using HTTP message converter
+
+web flux -> used for reactive application like there is no locking and unlocking of threads. -> one to many
+
+csrf( :: disable) ---> it aims to prevents disabling of cross site request forgery for web application
+
+tomcat -> server and web application -> synchronized by default-> thread safe ->more memory
+
+jetty -> web application -> supports both synchronous and asynchoronous -> less memory
+
+undertow -> asynchronous -> second less memory
+
+microservice -> uses jetty or undertow
